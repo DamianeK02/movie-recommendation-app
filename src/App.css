@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #212529;
+  color: white;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.container {
+  background-color: #343a40;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px 20px;
+  width: 200px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b52b3b;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + span {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid #dc3545;
+  border-radius: 5px;
+  background-color: #212529;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="radio"]:checked + span {
+  background-color: #dc3545;
+  color: white;
+}
+
+.rating .star {
+  font-size: 40px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rating .star.selected {
+  color: yellow;
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.movie {
+  background-color: #1b1c1e;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.movie-details {
+  flex: 1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff3379;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
